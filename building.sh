@@ -12,6 +12,7 @@ rm -rf device
 rm -rf packages
 rm -rf prebuilts/clang/host/linux-x86
 rm -rf out/host
+rm -rf out/soong/.intermediates/packages
 
 # Clone our local manifest.
 git clone https://github.com/Night-Raids-Reborn/local_manifest --depth 1 -b u .repo/local_manifests
