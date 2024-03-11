@@ -34,3 +34,10 @@ export TZ=Asia/Jakarta
 . build/envsetup.sh
 lunch afterlife_citrus-userdebug
 m afterlife
+
+# Build With gapps
+export WITH_GAPPS=true
+export WITH_GMS=true
+. build/envsetup.sh
+lunch afterlife_citrus-userdebug
+m afterlife
