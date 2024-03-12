@@ -24,11 +24,13 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimiz
 rm -rf packages/resources/devicesettings
 rm -rf vendor/qcom/opensource/vibrator
 rm -rf hardware/xiaomi
+em -rf packages/providers/DownloadProvider
 
 # Do clone here after repo sync.
 git clone https://github.com/PixelExperience/packages_resources_devicesettings -b thirteen packages/resources/devicesettings
 git clone https://github.com/Night-Raids-Reborn/android_vendor_qcom_opensource_vibrator -b thirteen vendor/qcom/opensource/vibrator
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
+git clone https://github.com/DerpFest-AOSP/packages_providers_DownloadProvider -b 13 packages/providers/DownloadProvider
     
 # Define timezone
 export TZ=Asia/Jakarta
