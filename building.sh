@@ -11,6 +11,7 @@ rm -rf kernel
 rm -rf device
 rm -rf packages
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts
 rm -rf out/host
 
 # Clone our local manifest.
