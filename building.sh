@@ -1,7 +1,7 @@
 rm -rf .repo/local_manifests
 
 # Do repo init for rom that we want to build.
-repo init -u https://github.com/bananadroid/android_manifest.git -b 14 --git-lf --depth=1 --no-repo-verify -g default,-mips,-darwin,-notdefault
+repo init -u https://github.com/bananadroid/android_manifest.git -b 14 --git-lfs --depth=1 --no-repo-verify -g default,-mips,-darwin,-notdefault
 
 # Do remove here before repo sync.
 rm -rf hardware
