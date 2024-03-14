@@ -35,3 +35,8 @@ export TZ=Asia/Jakarta
 . build/envsetup.sh
 lunch pixelstar_citrus-userdebug
 mka bacon
+
+# Let's start build for lime!
+. build/envsetup.sh
+lunch pixelstar_lime-userdebug
+mka bacon
