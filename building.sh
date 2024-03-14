@@ -32,9 +32,9 @@ git clone https://github.com/PixelExperience/packages_resources_devicesettings -
 export TZ=Asia/Jakarta
 
 # Let's start build!
-. build/envsetup.sh
-lunch pixelstar_citrus-userdebug
-mka bacon
+#. build/envsetup.sh
+#lunch pixelstar_citrus-userdebug
+#mka bacon
 
 # Let's start build for lime!
 . build/envsetup.sh
