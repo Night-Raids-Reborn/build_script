@@ -23,20 +23,24 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimiz
 # Do remove here after repo sync.
 rm -rf hardware/xiaomi
 rm -rf packages/resources/devicesettings
+rm -rf packages/apps/Settings
 
 # Do clone here after repo sync.
 git clone https://github.com/Night-Raids-Reborn/hardware_xiaomi -b udc hardware/xiaomi
 git clone https://github.com/PixelExperience/packages_resources_devicesettings -b fourteen packages/resources/devicesettings
+
+#Fork
+git clone https://github.com/Night-Raids-Reborn/pixelstar_packages_apps_Settings -b 14 packages/apps/Settings
     
 # Define timezone
 export TZ=Asia/Jakarta
 
 # Let's start build!
-#. build/envsetup.sh
-#lunch pixelstar_citrus-userdebug
-#mka bacon
+. build/envsetup.sh
+lunch pixelstar_citrus-userdebug
+mka bacon
 
 # Let's start build for lime!
-. build/envsetup.sh
-lunch pixelstar_lime-userdebug
-mka bacon
+#. build/envsetup.sh
+#lunch pixelstar_lime-userdebug
+#mka bacon
