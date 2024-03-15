@@ -24,6 +24,9 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimiz
 rm -rf hardware/xiaomi
 rm -rf packages/resources/devicesettings
 rm -rf packages/apps/Settings
+rm -rf vendor/pixelstar
+rm -rf device/pixelstar/sepolicy
+rm -rf build/make
 
 # Do clone here after repo sync.
 git clone https://github.com/Night-Raids-Reborn/hardware_xiaomi -b udc hardware/xiaomi
@@ -31,6 +34,9 @@ git clone https://github.com/PixelExperience/packages_resources_devicesettings -
 
 #Fork
 git clone https://github.com/Night-Raids-Reborn/pixelstar_packages_apps_Settings -b 14 packages/apps/Settings
+git clone https://github.com/Night-Raids-Reborn/vendor_pixelstar -b 14 vendor/pixelstar
+git clone https://github.com/Night-Raids-Reborn/device_pixelstar_sepolicy -b 14 device/pixelstar/sepolicy
+git clone https://github.com/Night-Raids-Reborn/build_pixelstar -b 14 build/make
     
 # Define timezone
 export TZ=Asia/Jakarta
