@@ -4,14 +4,7 @@ rm -rf .repo/local_manifests
 repo init -u https://github.com/SuperiorExtended/manifest -b UDC --git-lfs --depth=1 --no-repo-verify -g default,-mips,-darwin,-notdefault
 
 # Do remove here before repo sync.
-rm -rf hardware
-rm -rf vendor
-rm -rf system
-rm -rf kernel
-rm -rf device
-rm -rf packages
 rm -rf prebuilts/clang/host/linux-x86
-rm -rf prebuilts
 rm -rf out/host
 
 # Clone our local manifest.
