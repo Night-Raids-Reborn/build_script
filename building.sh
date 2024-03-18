@@ -3,9 +3,10 @@ rm -rf .repo/local_manifests
 # Do repo init for rom that we want to build.
 repo init -u https://github.com/SuperiorExtended/manifest -b UDC --git-lfs --depth=1 --no-repo-verify -g default,-mips,-darwin,-notdefault
 
-# Do remove here before repo sync.
-rm -rf prebuilts/clang/host/linux-x86
+# Do remove here before repo sync. I did it because of an error, please don't cancel it
 rm -rf out/host
+rm -rf packages
+rm -rf prebuilts
 
 # Clone our local manifest.
 git clone https://github.com/Night-Raids-Reborn/local_manifest --depth 1 -b 14-n-common .repo/local_manifests
